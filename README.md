@@ -809,10 +809,10 @@ Their valuable suggestions and continuous motivation contributed significantly t
 **ranirakshatha@gmail.com**
 
 🔗 LinkedIn:
-**(Add your LinkedIn profile URL here)**
+**(https://www.linkedin.com/in/rakshatha-rani-90a11a2a3/)**
 
 🔗 GitHub:
-**https://github.com/YOUR_USERNAME**
+**https://github.com/RakshathaRani**
 
 ---
 
