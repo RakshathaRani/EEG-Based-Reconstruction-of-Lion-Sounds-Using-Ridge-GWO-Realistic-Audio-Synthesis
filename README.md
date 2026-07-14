@@ -27,6 +27,11 @@ The project combines EEG signal synthesis, feature extraction, Ridge Regression,
 Unlike conventional audio reconstruction systems, this framework emphasizes optimization-driven signal reconstruction together with detailed visualization of EEG channels, waveform envelopes, reconstruction quality, playback analysis, and performance metrics.
 
 This project was developed as part of my **Master of Computer Applications (MCA) Final Year Research Project**.
+> **Notice**
+>
+> This repository showcases the research methodology, application interface, workflow, and experimental results.
+>
+> The complete source code, project report, and research manuscript are intentionally withheld because the associated research paper is currently under editorial review.
 
 ---
 
