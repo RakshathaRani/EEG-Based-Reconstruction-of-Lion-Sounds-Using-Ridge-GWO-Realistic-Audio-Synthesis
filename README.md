@@ -46,22 +46,6 @@ The associated research paper is currently under editorial review.
 
 ---
 
-# ⚠️ Source Code Availability
-
-The implementation source code, trained models, datasets, and complete research manuscript are intentionally **not included** in this repository because the associated research paper is currently under editorial review.
-
-This repository has been created solely to showcase:
-
-- Project methodology
-- Graphical User Interface (GUI)
-- Workflow
-- Experimental outputs
-- Performance evaluation
-- Visual demonstrations
-
-The complete implementation will remain private until the publication process is completed.
-
----
 
 # ⭐ Project Highlights
 
