@@ -725,24 +725,17 @@ This repository is intended solely to demonstrate:
 
 # 📑 Research Publication
 
-This project forms the basis of the following research manuscript:
+This project contributed to the following research manuscript developed as part of my MCA final-year research work.
 
-### Title
+**Title**
 
-**EEG-Based Reconstruction of Lion Sounds Using Ridge–GWO Realistic Audio Synthesis**
+EEG-Based Reconstruction of Lion Sounds Using Ridge–GWO Realistic Audio Synthesis
 
-### Journal
+**Publication Status**
 
-**SN Computer Science (Springer Nature)**
+🟢 Editor Assigned
 
-### Current Status
-
-🟢 **Editor Assigned**
-
-> **Note**
->
-> The manuscript is currently under editorial review.
-> Therefore, the complete project report, research manuscript, datasets, and implementation source code are intentionally not included in this repository.
+> The manuscript is currently under editorial review. Therefore, the complete project report, research manuscript, datasets, and source code are intentionally not included in this repository.
 
 ---
 
@@ -787,9 +780,13 @@ Artificial Intelligence • Machine Learning • EEG • Brain Computer Interfac
 
 # 🙏 Acknowledgements
 
-I sincerely express my gratitude to my project guide, faculty members, and my institution for their guidance, encouragement, and support throughout the development of this research project.
+I would like to express my sincere gratitude to my project mentor for their valuable guidance, continuous support, and encouragement throughout the development of this MCA research project.
 
-Their valuable suggestions and continuous motivation contributed significantly to the successful completion of this work.
+Special thanks to:
+
+- Dr. Anand Ghuli – Project Mentor
+
+Their expertise, constructive feedback, and research guidance were instrumental in the successful completion of this work.
 
 ---
 
@@ -809,7 +806,7 @@ Their valuable suggestions and continuous motivation contributed significantly t
 **ranirakshatha@gmail.com**
 
 🔗 LinkedIn:
-**(https://www.linkedin.com/in/rakshatha-rani-90a11a2a3/)**
+**https://www.linkedin.com/in/rakshatha-rani-90a11a2a3/**
 
 🔗 GitHub:
 **https://github.com/RakshathaRani**
