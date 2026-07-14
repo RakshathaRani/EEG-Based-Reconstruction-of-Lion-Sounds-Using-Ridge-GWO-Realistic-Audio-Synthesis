@@ -6,383 +6,405 @@
 
 <p align="center">
 
-![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
-![PyQt5](https://img.shields.io/badge/PyQt5-GUI-green?style=for-the-badge)
-![Machine Learning](https://img.shields.io/badge/Machine-Learning-orange?style=for-the-badge)
-![Signal Processing](https://img.shields.io/badge/Signal-Processing-red?style=for-the-badge)
-![EEG](https://img.shields.io/badge/EEG-Analysis-blueviolet?style=for-the-badge)
-![Audio Reconstruction](https://img.shields.io/badge/Audio-Reconstruction-success?style=for-the-badge)
-![Research Project](https://img.shields.io/badge/MCA-Final%20Year%20Project-darkgreen?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![PyQt5](https://img.shields.io/badge/PyQt5-GUI-green?logo=qt)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-orange)
+![Signal Processing](https://img.shields.io/badge/Signal-Processing-red)
+![EEG Analysis](https://img.shields.io/badge/EEG-Analysis-purple)
+![Audio Reconstruction](https://img.shields.io/badge/Audio-Reconstruction-success)
+![Research Project](https://img.shields.io/badge/MCA-Final%20Year%20Research-blueviolet)
 
 </p>
 
 ---
 
-# 📖 About the Project
+## 📖 About the Project
 
-This repository presents an advanced research project focused on reconstructing realistic lion vocalizations from synthesized EEG signals using modern machine learning and signal processing techniques.
+This repository presents my **Master of Computer Applications (MCA) Final Year Research Project**, which investigates the reconstruction of lion vocalizations from synthesized EEG signals using machine learning, optimization algorithms, and digital signal processing.
 
-The project combines EEG signal synthesis, feature extraction, Ridge Regression, Grey Wolf Optimization (GWO), and Griffin-Lim audio reconstruction into an integrated framework capable of generating reconstructed lion sounds while providing an interactive desktop dashboard for visualization and analysis.
+The framework combines:
 
-Unlike conventional audio reconstruction systems, this framework emphasizes optimization-driven signal reconstruction together with detailed visualization of EEG channels, waveform envelopes, reconstruction quality, playback analysis, and performance metrics.
+- EEG Signal Synthesis
+- Audio Feature Extraction
+- Ridge Regression
+- Grey Wolf Optimization (GWO)
+- Griffin-Lim Audio Reconstruction
+- Interactive PyQt5 Desktop Dashboard
 
-This project was developed as part of my **Master of Computer Applications (MCA) Final Year Research Project**.
+The system provides an end-to-end research workflow that reconstructs audio while visualizing EEG channels, waveform envelopes, reconstruction quality, playback analysis, and performance metrics through an interactive graphical interface.
+
+Unlike conventional EEG applications that focus primarily on signal classification, this work explores an optimization-driven framework for reconstructing meaningful audio representations from synthesized EEG signals.
+
+---
+
 > **Notice**
 >
-> This repository showcases the research methodology, application interface, workflow, and experimental results.
+> This repository showcases the research methodology, graphical user interface, workflow, and experimental results.
 >
-> The complete source code, project report, and research manuscript are intentionally withheld because the associated research paper is currently under editorial review.
+> The complete source code, datasets, trained models, project report, and research manuscript are intentionally **not included** because the associated research paper is currently under editorial review.
 
 ---
 
 # 📄 Research Status
 
-### Research Paper
-
-**Title**
-
-> EEG-Based Reconstruction of Realistic Lion Sounds Using Ridge Regression, Grey Wolf Optimization and Griffin-Lim Audio Synthesis
-
-### Publication Status
-
-🟢 **Editor Assigned**
-
-The associated research paper is currently under editorial review.
+| Item | Status |
+|------|--------|
+| Research Project | ✅ Completed |
+| Research Paper | 🟢 Under Editorial Review |
+| Source Code | 🔒 Private |
+| Research Report | 🔒 Private |
+| Dataset | 🔒 Private |
 
 ---
 
-
 # ⭐ Project Highlights
 
-✔ EEG Signal Synthesis
-
-✔ Audio Feature Extraction
-
-✔ Ridge Regression Model
-
-✔ Grey Wolf Optimization (GWO)
-
-✔ Griffin-Lim Audio Reconstruction
-
-✔ Interactive PyQt5 Desktop Dashboard
-
-✔ Envelope Comparison
-
-✔ EEG Channel Visualization
-
-✔ Audio Playback Interface
-
-✔ Reconstruction Metrics
-
-✔ Automated Output Generation
-
-✔ Professional GUI
+- ✅ EEG Signal Synthesis
+- ✅ Audio Preprocessing
+- ✅ Envelope Feature Extraction
+- ✅ Ridge Regression Model
+- ✅ Grey Wolf Optimization (GWO)
+- ✅ Griffin-Lim Audio Reconstruction
+- ✅ Interactive PyQt5 Desktop Dashboard
+- ✅ EEG Channel Visualization
+- ✅ Envelope Comparison
+- ✅ Audio Playback Interface
+- ✅ Performance Evaluation
+- ✅ Automatic Output Generation
+- ✅ Scientific Visualization
 
 ---
 
 # 📚 Table of Contents
 
-- Project Overview
-- Objectives
-- Research Methodology
-- System Workflow
-- Features
-- GUI Dashboard
-- Experimental Results
-- Sample Outputs
-- Performance Metrics
-- Technologies Used
-- Repository Structure
-- Research Status
-- Future Scope
-- Disclaimer
-- Contact
+- [📖 About the Project](#-about-the-project)
+- [🎯 Project Overview](#-project-overview)
+- [🎯 Objectives](#-objectives)
+- [💡 Why This Research?](#-why-this-research)
+- [🔬 Research Methodology](#-research-methodology)
+- [⚙️ System Workflow](#️-system-workflow)
+- [🏗️ System Architecture](#️-system-architecture)
+- [🔄 Complete Processing Pipeline](#-complete-processing-pipeline)
+- [✨ Features](#-features)
+- [🖥️ Interactive Desktop Dashboard](#️-interactive-desktop-dashboard)
+- [🎵 Sample Outputs](#-sample-outputs)
+- [📊 Performance Metrics](#-performance-metrics)
+- [🧪 Technologies Used](#-technologies-used)
+- [📁 Repository Structure](#-repository-structure)
+- [🎯 Research Contributions](#-research-contributions)
+- [💡 Applications](#-applications)
+- [🚀 Future Scope](#-future-scope)
+- [🎓 Academic Information](#-academic-information)
+- [📑 Research Publication](#-research-publication)
+- [🏆 Skills Demonstrated](#-skills-demonstrated)
+- [🙏 Acknowledgements](#-acknowledgements)
+- [📬 Contact](#-contact)
 
 ---
 
 # 🎯 Project Overview
 
-Brain signals contain valuable information regarding auditory perception and neural responses.
+Electroencephalography (EEG) is widely used for studying brain activity, neurological disorders, and Brain-Computer Interface (BCI) systems. While most existing research focuses on EEG signal classification or decoding, this project explores a different research direction by investigating whether meaningful audio signals can be reconstructed from synthesized EEG representations.
 
-The objective of this research is to investigate whether meaningful audio characteristics can be reconstructed using synthesized EEG representations combined with optimization-based machine learning algorithms.
+This project proposes a complete end-to-end framework that integrates signal processing, machine learning, optimization algorithms, and audio synthesis into a unified reconstruction pipeline.
 
 The proposed framework performs the following operations:
 
-- Reads input audio recordings.
-- Synthesizes representative EEG signals.
-- Extracts envelope-based signal features.
-- Applies Ridge Regression for prediction.
-- Optimizes reconstruction parameters using Grey Wolf Optimization.
-- Reconstructs realistic audio using Griffin-Lim Spectrogram Inversion.
-- Displays interactive visualizations using a PyQt5 desktop application.
-- Generates reconstructed audio together with detailed evaluation metrics.
+- Accepts lion vocalization recordings as input
+- Generates synthesized EEG signals
+- Extracts informative temporal and statistical features
+- Learns feature relationships using Ridge Regression
+- Optimizes reconstruction parameters using Grey Wolf Optimization (GWO)
+- Reconstructs audio using the Griffin-Lim algorithm
+- Evaluates reconstruction quality using multiple statistical metrics
+- Presents all results through an interactive PyQt5 desktop application
 
-The application provides an intuitive graphical interface allowing users to execute the entire reconstruction pipeline with a single click while simultaneously visualizing each processing stage.
+The project demonstrates how optimization-driven machine learning techniques can be combined with EEG-inspired representations to reconstruct meaningful audio while providing an intuitive research interface for experimentation and visualization.
 
 ---
 
 # 🎯 Objectives
 
-The primary objective of this research is to investigate the feasibility of reconstructing realistic lion vocalizations using synthesized EEG signals combined with optimization-driven machine learning algorithms.
+The primary objective of this research is to investigate the feasibility of reconstructing lion vocalizations using synthesized EEG signals combined with machine learning and optimization techniques.
 
-The project specifically aims to:
+Specific objectives include:
 
-- Develop an end-to-end EEG-based audio reconstruction framework.
-- Simulate EEG signals from input audio recordings.
-- Extract meaningful signal features for machine learning.
-- Train a Ridge Regression model for audio reconstruction.
-- Optimize reconstruction parameters using Grey Wolf Optimization (GWO).
-- Reconstruct realistic lion sounds using Griffin-Lim Audio Synthesis.
-- Visualize EEG signals, waveform envelopes, and reconstruction performance.
-- Provide an interactive desktop application for executing the complete reconstruction pipeline.
-- Evaluate reconstruction quality using multiple statistical metrics.
+- Develop a complete EEG-based audio reconstruction framework
+- Generate representative EEG signals from audio recordings
+- Extract meaningful signal features for machine learning
+- Train a Ridge Regression model for signal reconstruction
+- Optimize reconstruction parameters using Grey Wolf Optimization (GWO)
+- Reconstruct realistic audio using the Griffin-Lim algorithm
+- Visualize EEG signals and reconstruction results through a graphical interface
+- Evaluate reconstruction quality using statistical performance metrics
+- Provide an interactive desktop application for executing the complete pipeline
+
+---
+
+# 💡 Why This Research?
+
+Traditional EEG research primarily focuses on tasks such as signal classification, mental state recognition, emotion analysis, and Brain-Computer Interface (BCI) applications.
+
+This research investigates a novel direction by exploring whether synthesized EEG representations can be utilized to reconstruct meaningful animal vocalizations.
+
+The proposed framework combines machine learning, optimization algorithms, digital signal processing, and scientific visualization into a unified workflow capable of generating reconstructed lion sounds while providing comprehensive analytical insights.
+
+Rather than functioning as a conventional software application, this project serves as an experimental research platform that demonstrates the integration of Artificial Intelligence, Machine Learning, Signal Processing, and Brain-Computer Interface concepts in a single interactive system.
 
 ---
 
 # 🔬 Research Methodology
 
-The proposed framework consists of several sequential stages designed to reconstruct audio from synthesized EEG representations.
+The proposed framework consists of multiple interconnected stages that transform an input lion vocalization into a reconstructed audio signal through synthesized EEG representations and optimization-driven machine learning techniques.
 
-The methodology combines modern signal processing techniques with optimization-based machine learning.
-
-The major phases include:
-
-### 1️⃣ Audio Acquisition
-
-The system accepts lion vocalization recordings in WAV format.
-
-These recordings serve as the primary input for EEG synthesis and reconstruction.
+The methodology integrates signal processing, statistical feature extraction, optimization algorithms, and scientific visualization into a single end-to-end pipeline.
 
 ---
 
-### 2️⃣ EEG Signal Synthesis
+## 1️⃣ Audio Acquisition
 
-Instead of requiring expensive EEG acquisition hardware, representative EEG signals are synthesized from the audio recordings using envelope-guided signal modeling.
+The reconstruction process begins with a lion vocalization recorded in WAV format.
 
-The synthesized EEG preserves temporal variations useful for subsequent learning.
-
----
-
-### 3️⃣ Audio Preprocessing
-
-The audio undergoes preprocessing including:
-
-- Normalization
-- Noise handling
-- Envelope extraction
-- Spectral analysis
-- Window segmentation
-
-These preprocessing steps improve reconstruction quality.
+The selected audio acts as the primary source from which representative EEG signals are synthesized.
 
 ---
 
-### 4️⃣ Feature Extraction
+## 2️⃣ Audio Preprocessing
 
-Important temporal and statistical features are extracted from synthesized EEG signals including:
+Before reconstruction, the audio undergoes several preprocessing operations to improve signal quality.
+
+These include:
+
+- Audio Normalization
+- Noise Reduction
+- Window Segmentation
+- Envelope Extraction
+- Spectral Analysis
+
+Preprocessing ensures stable feature extraction and improved reconstruction quality.
+
+---
+
+## 3️⃣ EEG Signal Synthesis
+
+Instead of relying on expensive EEG acquisition hardware, the framework generates representative EEG-like signals from the temporal characteristics of the input audio.
+
+The synthesized EEG preserves envelope variations that are useful for machine learning and optimization.
+
+---
+
+## 4️⃣ Feature Extraction
+
+Multiple statistical and temporal features are extracted from the synthesized EEG.
+
+Extracted features include:
 
 - RMS Energy
 - Peak-to-Peak Amplitude
 - Envelope Characteristics
-- Statistical Moments
-- Time-domain Features
+- Mean
+- Standard Deviation
+- Skewness
+- Kurtosis
+- Signal Variance
+- Temporal Statistics
 
-These features become inputs to the regression model.
-
----
-
-### 5️⃣ Ridge Regression
-
-Ridge Regression is employed to establish the relationship between synthesized EEG features and audio characteristics.
-
-The model reduces overfitting while improving reconstruction stability.
+These features become the input for the regression model.
 
 ---
 
-### 6️⃣ Grey Wolf Optimization (GWO)
+## 5️⃣ Ridge Regression
 
-Grey Wolf Optimization is used to determine the optimal parameters that minimize reconstruction error.
+Ridge Regression is employed to establish the relationship between synthesized EEG features and reconstructed audio characteristics.
 
-The optimization process searches for the best combination of parameters that maximizes reconstruction quality.
+The regression model improves prediction stability while reducing overfitting.
 
-Optimization Parameters include:
+---
+
+## 6️⃣ Grey Wolf Optimization (GWO)
+
+Grey Wolf Optimization is applied to optimize the regression parameters.
+
+The optimizer searches for parameter combinations that minimize reconstruction error while improving waveform similarity.
+
+Optimization focuses on:
 
 - Alpha
 - Window Size
 - Step Size
+- Learning Parameters
 
 ---
 
-### 7️⃣ Griffin-Lim Audio Reconstruction
+## 7️⃣ Griffin-Lim Audio Reconstruction
 
-The optimized spectrogram is converted back into a realistic audio waveform using the Griffin-Lim algorithm.
+The optimized spectrogram is converted back into a time-domain waveform using the Griffin-Lim algorithm.
 
-This stage generates the reconstructed lion sound.
+This stage generates the reconstructed lion vocalization.
 
 ---
 
-### 8️⃣ Performance Evaluation
+## 8️⃣ Performance Evaluation
 
-The reconstructed audio is evaluated using several statistical metrics including:
+The reconstructed output is evaluated using several statistical metrics.
+
+These include:
 
 - Mean Squared Error (MSE)
 - Pearson Correlation
-- Reconstruction Accuracy
-- Envelope Similarity
 - RMS Energy
 - Peak-to-Peak Amplitude
 - Skewness
 - Kurtosis
+- Reconstruction Accuracy
+
+The results are presented through the graphical dashboard for easy analysis.
 
 ---
 
 # ⚙️ System Workflow
 
-The complete workflow of the proposed system is illustrated below.
+The complete workflow of the proposed framework is illustrated below.
 
-```
-Input Audio
-      │
-      ▼
+```text
+Input Lion Audio (.wav)
+            │
+            ▼
 Audio Preprocessing
-      │
-      ▼
+            │
+            ▼
 Envelope Extraction
-      │
-      ▼
+            │
+            ▼
 Synthetic EEG Generation
-      │
-      ▼
+            │
+            ▼
 Feature Extraction
-      │
-      ▼
+            │
+            ▼
 Ridge Regression Model
-      │
-      ▼
+            │
+            ▼
 Grey Wolf Optimization
-      │
-      ▼
+            │
+            ▼
 Optimized Features
-      │
-      ▼
+            │
+            ▼
 Griffin-Lim Reconstruction
-      │
-      ▼
+            │
+            ▼
 Reconstructed Audio
-      │
-      ▼
+            │
+            ▼
 Performance Evaluation
-      │
-      ▼
-Interactive Dashboard
+            │
+            ▼
+Interactive PyQt5 Dashboard
 ```
 
 ---
 
 # 🏗️ System Architecture
 
-The architecture integrates multiple computational modules into a unified reconstruction framework.
+The proposed architecture integrates signal processing, machine learning, optimization, and visualization into a unified reconstruction framework.
 
-```
-                ┌────────────────────┐
-                │ Input Audio(.wav)  │
-                └──────────┬─────────┘
-                           │
-                           ▼
-              Audio Preprocessing Module
-                           │
-                           ▼
-              Envelope Extraction Module
-                           │
-                           ▼
-             EEG Signal Synthesis Module
-                           │
-                           ▼
-               Feature Extraction Module
-                           │
-                           ▼
-                Ridge Regression Model
-                           │
-                           ▼
-                Grey Wolf Optimization
-                           │
-                           ▼
-              Griffin-Lim Reconstruction
-                           │
-                           ▼
-                Performance Evaluation
-                           │
-                           ▼
-                PyQt5 Desktop Dashboard
+```text
+                     Input Audio (.wav)
+                             │
+                             ▼
+                  Audio Preprocessing Module
+                             │
+                             ▼
+                  Envelope Extraction Module
+                             │
+                             ▼
+                 Synthetic EEG Generation
+                             │
+                             ▼
+                  Feature Extraction Module
+                             │
+                             ▼
+                    Ridge Regression Model
+                             │
+                             ▼
+                 Grey Wolf Optimization
+                             │
+                             ▼
+               Griffin-Lim Reconstruction
+                             │
+                             ▼
+                  Performance Evaluation
+                             │
+                             ▼
+               Interactive PyQt5 Dashboard
 ```
 
 ---
 
 # 🔄 Complete Processing Pipeline
 
-The application performs the following automated operations after clicking the **Run Pipeline** button:
+Once the user clicks **Run Pipeline**, the application automatically performs the following operations:
 
-1. Load input audio files.
-2. Preprocess audio signals.
-3. Generate synthesized EEG.
-4. Extract statistical features.
-5. Train Ridge Regression model.
-6. Optimize parameters using Grey Wolf Optimization.
-7. Reconstruct audio signals.
-8. Generate waveform comparisons.
-9. Display EEG channel visualizations.
-10. Compute evaluation metrics.
-11. Save reconstructed audio.
-12. Export plots and graphical results.
-13. Display all outputs within the dashboard.
+1. Load the selected lion audio file.
+2. Perform preprocessing and normalization.
+3. Generate synthesized EEG signals.
+4. Extract statistical and temporal features.
+5. Train the Ridge Regression model.
+6. Optimize reconstruction parameters using Grey Wolf Optimization.
+7. Reconstruct the audio using Griffin-Lim synthesis.
+8. Compute evaluation metrics.
+9. Generate waveform and envelope comparisons.
+10. Display EEG channel visualizations.
+11. Save reconstructed audio and analysis outputs.
+12. Present all results within the interactive dashboard.
 
-The entire workflow is executed automatically through the graphical user interface.
+The entire reconstruction process is automated, allowing researchers to execute the complete workflow through a single graphical interface.
+
 ---
 
 # ✨ Features
 
-The proposed system offers an integrated research framework combining machine learning, optimization, signal processing, and interactive visualization.
+The proposed framework integrates Artificial Intelligence, Signal Processing, and Optimization into a single research platform capable of reconstructing lion vocalizations from synthesized EEG signals.
 
 ## Core Features
 
-- EEG Signal Synthesis
-- Audio Preprocessing
-- Envelope Extraction
-- Ridge Regression Prediction
-- Grey Wolf Optimization (GWO)
-- Griffin-Lim Audio Reconstruction
-- Automated Pipeline Execution
-- Real-Time Execution Logs
-- Interactive Desktop Dashboard
-- Output Audio Generation
-- Performance Evaluation
-- Visualization of EEG Channels
-- Envelope Comparison
-- Waveform Comparison
-- Automatic Result Saving
+- 🧠 EEG Signal Synthesis
+- 🎵 Audio Preprocessing
+- 📈 Envelope Extraction
+- 🤖 Ridge Regression Model
+- 🐺 Grey Wolf Optimization (GWO)
+- 🔊 Griffin-Lim Audio Reconstruction
+- 📊 Performance Evaluation
+- 🖥 Interactive PyQt5 Desktop Dashboard
+- 📂 Automatic Output Generation
+- 📉 Envelope Comparison
+- 📡 EEG Channel Visualization
+- ▶ Audio Playback Interface
+- 📑 Automatic Result Export
 
 ---
 
-# 🖥️ Interactive Desktop Dashboard
+# 🖥 Interactive Desktop Dashboard
 
-A modern PyQt5-based desktop application has been developed to simplify the complete reconstruction workflow.
+A modern desktop application was developed using **PyQt5** to simplify the complete reconstruction workflow.
 
-The dashboard provides:
+The dashboard enables researchers to:
 
-- Pipeline execution
-- Audio selection
-- Real-time execution logs
-- Envelope visualization
-- EEG channel visualization
-- Audio playback
-- Reconstruction metrics
-- Output management
+- Load audio files
+- Execute the reconstruction pipeline
+- Monitor execution logs
+- Visualize EEG channels
+- Compare envelopes
+- Play reconstructed audio
+- Analyze reconstruction metrics
+- Access generated outputs
 
 ---
 
-## 🏠 Dashboard Home
+# 🏠 Dashboard Home
 
-The main interface allows users to load input audio, execute the reconstruction pipeline, switch themes, and access generated outputs.
+The home screen provides access to every stage of the reconstruction pipeline through a clean and user-friendly graphical interface.
 
 <p align="center">
 <img src="screenshots/dashboard.png" width="95%">
@@ -390,16 +412,17 @@ The main interface allows users to load input audio, execute the reconstruction 
 
 ---
 
-## ▶ Running the Pipeline
+# ▶ Pipeline Execution
 
-Users can execute the complete reconstruction workflow using a single click.
+After selecting an input audio file, the entire reconstruction pipeline can be executed using a single button.
 
-During execution the dashboard displays:
+The dashboard displays:
 
 - Current processing stage
 - Execution progress
 - Console logs
-- Processing status
+- Pipeline status
+- Generated outputs
 
 <p align="center">
 <img src="screenshots/running_pipeline.png" width="95%">
@@ -409,9 +432,9 @@ During execution the dashboard displays:
 
 # 📈 Envelope Comparison
 
-The application compares the original audio envelope with the reconstructed envelope after optimization.
+Envelope comparison allows visual evaluation of how closely the reconstructed signal follows the original audio.
 
-This visualization helps evaluate reconstruction quality.
+This comparison provides insight into reconstruction quality.
 
 <p align="center">
 <img src="screenshots/envelope_comparison.png" width="95%">
@@ -421,9 +444,9 @@ This visualization helps evaluate reconstruction quality.
 
 # 🧠 EEG Channel Visualization
 
-The synthesized EEG channels generated during reconstruction are visualized for analysis.
+The synthesized EEG channels generated during reconstruction are displayed for analysis.
 
-Multiple EEG channels are displayed simultaneously to observe temporal variations.
+Multiple channels are visualized simultaneously to observe temporal variations and signal characteristics.
 
 <p align="center">
 <img src="screenshots/eeg_channels.png" width="95%">
@@ -433,13 +456,13 @@ Multiple EEG channels are displayed simultaneously to observe temporal variation
 
 # 🔊 Audio Playback
 
-The dashboard provides waveform comparison together with reconstructed audio playback.
+The application allows comparison of the original and reconstructed lion vocalizations.
 
-Users can compare:
+Users can:
 
-- Original waveform
-- Reconstructed waveform
-- Generated audio output
+- View waveform comparison
+- Listen to reconstructed audio
+- Analyze waveform similarity
 
 <p align="center">
 <img src="screenshots/audio_playback.png" width="95%">
@@ -449,11 +472,12 @@ Users can compare:
 
 # 📊 Performance Metrics
 
-After reconstruction, the application automatically computes multiple evaluation metrics including:
+Following reconstruction, the dashboard automatically calculates several evaluation metrics.
+
+These include:
 
 - Mean Squared Error (MSE)
 - Pearson Correlation
-- Reconstruction Accuracy
 - RMS Energy
 - Peak-to-Peak Amplitude
 - Skewness
@@ -467,15 +491,15 @@ After reconstruction, the application automatically computes multiple evaluation
 
 # 📂 Generated Outputs
 
-All reconstructed audio files and visualization images are automatically saved for future analysis.
+The framework automatically stores all generated outputs for future analysis.
 
-Generated outputs include:
+Saved outputs include:
 
 - Reconstructed Audio (.wav)
-- Envelope Comparison Images
+- Envelope Comparison
 - EEG Channel Plots
 - Waveform Comparison
-- Summary Report
+- Performance Summary
 
 <p align="center">
 <img src="screenshots/output_folder.png" width="95%">
@@ -485,11 +509,11 @@ Generated outputs include:
 
 # 🎵 Sample Outputs
 
-Representative outputs generated by the system are shown below.
+Representative outputs generated by the proposed framework are shown below.
 
 ---
 
-## EEG Channel Visualization
+## 🧠 EEG Channel Visualization
 
 <p align="center">
 <img src="screenshots/sample_outputs/lion_1_part_1_eeg_channels_gwo_opt.png" width="90%">
@@ -497,7 +521,7 @@ Representative outputs generated by the system are shown below.
 
 ---
 
-## Envelope Comparison
+## 📈 Envelope Comparison
 
 <p align="center">
 <img src="screenshots/sample_outputs/lion_1_part_1_envelope_gwo_opt.png" width="90%">
@@ -505,7 +529,7 @@ Representative outputs generated by the system are shown below.
 
 ---
 
-## Waveform Comparison
+## 🔊 Waveform Comparison
 
 <p align="center">
 <img src="screenshots/sample_outputs/lion_1_part_1_playback_gwo_opt.png" width="90%">
@@ -513,41 +537,43 @@ Representative outputs generated by the system are shown below.
 
 ---
 
-The generated outputs demonstrate the capability of the proposed framework to reconstruct realistic lion vocalizations while preserving important temporal characteristics and signal patterns.
+The experimental outputs demonstrate that the proposed framework is capable of reconstructing lion vocalizations while preserving important temporal characteristics and waveform structures.
+
 ---
 
 # 📈 Performance Summary
 
-The proposed framework demonstrates strong reconstruction capability by combining signal processing with optimization-driven machine learning.
+The proposed framework demonstrates the successful integration of signal processing, optimization algorithms, and machine learning for EEG-inspired audio reconstruction.
 
 ## Evaluation Metrics
 
-The following metrics are automatically computed after every reconstruction.
+The system automatically computes several statistical metrics after each reconstruction process.
 
-| Metric | Description |
-|---------|-------------|
+| Metric | Purpose |
+|---------|---------|
 | Mean Squared Error (MSE) | Measures reconstruction error |
 | Pearson Correlation | Measures similarity between original and reconstructed signals |
-| RMS Energy | Signal energy comparison |
-| Peak-to-Peak Amplitude | Signal amplitude analysis |
-| Skewness | Distribution asymmetry |
-| Kurtosis | Distribution shape analysis |
+| RMS Energy | Compares signal energy |
+| Peak-to-Peak Amplitude | Measures signal amplitude variation |
+| Skewness | Evaluates signal distribution |
+| Kurtosis | Measures signal sharpness and distribution |
 
 ---
 
 # 📊 Experimental Results
 
-The reconstructed audio closely follows the temporal characteristics of the original lion vocalization.
+The experimental evaluation demonstrates that the reconstructed audio preserves important temporal characteristics of the original lion vocalization.
 
-The generated EEG representations successfully preserve envelope information required for reconstruction while Grey Wolf Optimization significantly improves regression performance.
+The combination of Ridge Regression and Grey Wolf Optimization significantly improves reconstruction quality while maintaining stable performance.
 
-The reconstructed audio demonstrates:
+The proposed framework successfully achieves:
 
-- High envelope similarity
-- Stable optimization performance
+- High-quality waveform reconstruction
 - Low reconstruction error
-- Smooth waveform reconstruction
-- High temporal correlation
+- Stable optimization performance
+- High envelope similarity
+- Effective EEG-inspired signal representation
+- Automated visualization of reconstruction quality
 
 ---
 
@@ -568,6 +594,11 @@ The reconstructed audio demonstrates:
 ## Machine Learning
 
 - Ridge Regression
+
+---
+
+## Optimization
+
 - Grey Wolf Optimization (GWO)
 
 ---
@@ -581,9 +612,16 @@ The reconstructed audio demonstrates:
 
 ---
 
-## Visualization
+## Scientific Visualization
 
 - Matplotlib
+
+---
+
+## Audio Processing
+
+- Short-Time Fourier Transform (STFT)
+- Griffin-Lim Algorithm
 
 ---
 
@@ -595,23 +633,15 @@ The reconstructed audio demonstrates:
 
 ---
 
-## Audio Processing
-
-- STFT
-- Griffin-Lim Algorithm
-- Waveform Reconstruction
-
----
-
 # 📁 Repository Structure
 
-```
+```text
 EEG-Based-Reconstruction-of-Lion-Sounds/
 │
 ├── README.md
 ├── banner.png
 │
-├── screenshots
+├── screenshots/
 │   ├── dashboard.png
 │   ├── running_pipeline.png
 │   ├── envelope_comparison.png
@@ -620,85 +650,84 @@ EEG-Based-Reconstruction-of-Lion-Sounds/
 │   ├── metrics_summary.png
 │   ├── output_folder.png
 │   │
-│   └── sample_outputs
+│   └── sample_outputs/
 │       ├── lion_1_part_1_eeg_channels_gwo_opt.png
 │       ├── lion_1_part_1_envelope_gwo_opt.png
 │       └── lion_1_part_1_playback_gwo_opt.png
+│
+└── LICENSE
 ```
 
 ---
 
 # 🎯 Research Contributions
 
-This research contributes an integrated framework for EEG-guided audio reconstruction by combining signal processing, optimization, and machine learning into a unified workflow.
+The major contributions of this research include:
 
-The major contributions include:
-
-- Synthetic EEG generation from natural lion vocalizations.
-- Envelope-based EEG feature extraction.
-- Ridge Regression based audio reconstruction.
-- Hyperparameter optimization using Grey Wolf Optimization.
-- Griffin-Lim based waveform reconstruction.
-- Interactive PyQt5 desktop application.
-- Automated visualization and result generation.
+- Development of an EEG-inspired audio reconstruction framework.
+- Integration of Ridge Regression with Grey Wolf Optimization.
+- Reconstruction of lion vocalizations using Griffin-Lim synthesis.
+- Interactive PyQt5 desktop application for visualization.
+- Automated generation of waveform comparisons and evaluation metrics.
+- Scientific visualization of EEG channels and reconstructed signals.
+- Modular workflow suitable for future research and experimentation.
 
 ---
 
-# 💡 Applications
+# 💡 Potential Applications
 
-The proposed framework can contribute to several research domains including:
+The proposed framework has potential applications in several research domains:
 
 - Brain-Computer Interface (BCI)
-- EEG Signal Processing
-- Biomedical Engineering
+- EEG Signal Analysis
+- Biomedical Signal Processing
 - Artificial Intelligence
 - Machine Learning
-- Neural Signal Analysis
-- Audio Reconstruction
 - Computational Neuroscience
+- Audio Signal Processing
 - Cognitive Science
-- Medical Signal Processing
+- Speech Reconstruction Research
+- Neural Signal Modeling
 
 ---
 
 # 🚀 Future Scope
 
-The current work establishes a strong foundation for future research.
+Future improvements may include:
 
-Possible future improvements include:
-
-- Real EEG Dataset Integration
-- Deep Learning based Reconstruction
-- Transformer-based Audio Decoding
-- Diffusion Models
-- Speech Reconstruction
-- Music Reconstruction
-- Real-Time EEG Processing
-- Multi-Subject EEG Analysis
-- Cloud-Based Processing
-- Clinical BCI Applications
-- Attention Detection
-- Emotion Recognition
-- Real-Time Visualization Dashboard
+- Integration of real EEG datasets
+- Deep neural network-based reconstruction models
+- Transformer-based audio reconstruction
+- Diffusion models for signal generation
+- Real-time EEG processing
+- Multi-subject EEG analysis
+- Cloud-based deployment
+- Mobile application interface
+- Clinical Brain-Computer Interface applications
+- Emotion recognition from EEG signals
+- Speech reconstruction using EEG
 
 ---
 
 # 🔒 Research & Publication Notice
 
-This project forms the basis of an ongoing research work.
+This repository represents an academic research project developed as part of my Master of Computer Applications (MCA).
 
-The complete implementation, datasets, trained models, research manuscript, and thesis report are intentionally **not included** in this repository.
+The complete implementation, datasets, trained models, research manuscript, and project report are intentionally **not included** because the associated research paper is currently under editorial review.
 
-The associated manuscript is currently under editorial review.
-
-This repository is intended solely to demonstrate:
+This repository has been created exclusively to demonstrate:
 
 - Research methodology
-- Graphical User Interface
-- Processing workflow
-- Experimental outputs
-- Reconstruction quality
-- Technical implementation overview---
+- System architecture
+- Interactive graphical user interface
+- Experimental workflow
+- Sample outputs
+- Performance evaluation
+- Overall research contributions
+
+Thank you for respecting the confidentiality of the unpublished research work.
+
+---
 
 # 🎓 Academic Information
 
@@ -707,40 +736,35 @@ This repository is intended solely to demonstrate:
 | Degree | Master of Computer Applications (MCA) |
 | Project Type | Final Year Research Project |
 | Academic Year | 2025–2026 |
-| Institution | BLDEA's V.P. Dr. P.G. Halakatti College of Engineering and Technology, Vijayapura |
-| Research Area | Artificial Intelligence, Machine Learning, Signal Processing, Brain-Computer Interface |
+| Research Domain | Artificial Intelligence, Machine Learning, Signal Processing |
+| Application Type | Desktop Research Application |
+| Development Platform | Python & PyQt5 |
 
 ---
 
 # 📑 Research Publication
 
-This project contributed to the following research manuscript developed as part of my MCA final-year research work.
+This project contributed to an ongoing research study developed as part of my MCA final-year research work.
 
-**Title**
+## Research Title
 
-EEG-Based Reconstruction of Lion Sounds Using Ridge–GWO Realistic Audio Synthesis
+**EEG-Based Reconstruction of Lion Sounds Using Ridge Regression, Grey Wolf Optimization and Griffin-Lim Audio Synthesis**
 
-**Publication Status**
+## Publication Status
 
-🟢 Editor Assigned
+🟢 **Research Manuscript Currently Under Editorial Review**
 
-> The manuscript is currently under editorial review. Therefore, the complete project report, research manuscript, datasets, and source code are intentionally not included in this repository.
+The manuscript is currently undergoing the editorial review process.
 
----
+To maintain research integrity and comply with publication guidelines, the following materials are intentionally **not included** in this repository:
 
-# 📌 Repository Purpose
+- Source Code
+- Research Paper
+- Project Report
+- Datasets
+- Trained Models
 
-This repository has been created to demonstrate:
-
-- Research methodology
-- Project architecture
-- Graphical User Interface (GUI)
-- Experimental workflow
-- Sample outputs
-- Reconstruction quality
-- Performance evaluation
-
-This repository **does not** include the complete implementation due to ongoing publication procedures.
+These materials will remain private until the publication process is completed.
 
 ---
 
@@ -748,34 +772,69 @@ This repository **does not** include the complete implementation due to ongoing 
 
 This project demonstrates practical knowledge in:
 
-- Python Programming
+### Programming
+
+- Python
+
+### Artificial Intelligence
+
 - Machine Learning
-- Artificial Intelligence
-- Signal Processing
-- EEG Analysis
-- Audio Processing
-- Scientific Computing
 - Optimization Algorithms
-- Desktop Application Development
-- Data Visualization
+
+### Signal Processing
+
+- EEG Signal Processing
+- Audio Signal Processing
+- Feature Extraction
+
+### Machine Learning
+
+- Ridge Regression
+- Model Optimization
+
+### Optimization
+
+- Grey Wolf Optimization (GWO)
+
+### Audio Processing
+
+- Griffin-Lim Algorithm
+- Spectrogram Processing
+- Waveform Reconstruction
+
+### Scientific Computing
+
+- NumPy
+- SciPy
+- Librosa
+- Matplotlib
+
+### Desktop Development
+
+- PyQt5
+- Interactive GUI Design
 
 ---
 
 # 📖 Keywords
 
-Artificial Intelligence • Machine Learning • EEG • Brain Computer Interface • Signal Processing • Audio Reconstruction • Ridge Regression • Grey Wolf Optimization • Griffin-Lim Algorithm • PyQt5 • Python • Scientific Computing
+Artificial Intelligence • Machine Learning • EEG • Signal Processing • Brain-Computer Interface • Audio Reconstruction • Ridge Regression • Grey Wolf Optimization • Griffin-Lim • PyQt5 • Scientific Computing • Python
 
 ---
 
 # 🙏 Acknowledgements
 
-I would like to express my sincere gratitude to my project mentor for their valuable guidance, continuous support, and encouragement throughout the development of this MCA research project.
+I would like to express my sincere gratitude to my project mentor for his continuous guidance, encouragement, and valuable suggestions throughout the development of this research project.
 
-Special thanks to:
+### Special Thanks
 
-- Dr. Anand Ghuli – Project Mentor
+**Dr. Anand Ghuli**
 
-Their expertise, constructive feedback, and research guidance were instrumental in the successful completion of this work.
+Project Mentor
+
+His expertise, insightful feedback, and constant support played an important role in the successful completion of this research work.
+
+I also express my gratitude to my institution for providing the academic environment and resources necessary to complete this project.
 
 ---
 
@@ -791,41 +850,46 @@ Their expertise, constructive feedback, and research guidance were instrumental 
 
 📍 Vijayapura, Karnataka, India
 
-📧 Email:
+📧 Email
+
 **ranirakshatha@gmail.com**
 
-🔗 LinkedIn:
-**https://www.linkedin.com/in/rakshatha-rani-90a11a2a3/**
+💼 LinkedIn
 
-🔗 GitHub:
-**https://github.com/RakshathaRani**
+https://www.linkedin.com/in/rakshatha-rani-90a11a2a3/
+
+🌐 GitHub
+
+https://github.com/RakshathaRani
 
 ---
 
 # ⭐ Support
 
-If you found this repository interesting, please consider giving it a ⭐.
+Thank you for visiting this repository.
 
-It motivates me to continue building more projects and contributing to the developer community.
+If you found this project interesting, please consider giving it a ⭐.
+
+Your support motivates me to continue learning, building research projects, and contributing to the developer community.
 
 ---
 
 # 📜 Disclaimer
 
-This repository is intended for **academic and portfolio purposes only**.
+This repository has been created exclusively for **academic and portfolio purposes**.
 
-The source code, datasets, trained models, and research manuscript remain private because the associated research paper is currently under editorial review.
+The implementation source code, research manuscript, datasets, trained models, and project report are intentionally withheld because the associated research paper is currently under editorial review.
 
-No part of the unpublished research work should be interpreted as the official published version.
+The screenshots, workflow, architecture, and experimental outputs presented in this repository are intended only to demonstrate the overall methodology and capabilities of the proposed framework.
 
 ---
 
 <p align="center">
 
-### 🧠 "Transforming Brain Signals into Meaningful Audio Through Artificial Intelligence"
+## 🧠 Transforming EEG Signals into Meaningful Audio Using Artificial Intelligence
 
-**Thank you for visiting my repository!**
+### Thank you for visiting my repository!
 
-⭐ If you like this project, please consider giving it a Star ⭐
+⭐ If you found this project interesting, please consider giving it a Star.
 
 </p>
